@@ -1,0 +1,24 @@
+INSERT INTO basicos (nombre, email, nacimiento, ubicacion, idioma, foto) VALUES('Matias Bonfanti','matias@mbonfanti.com', '27 de enero 1987', 'Resistencia, Chaco', 'Ingles', '3727.jpg');
+
+INSERT INTO skills (nombre, porcentaje) VALUES('HTML', '12');
+INSERT INTO skills (nombre, porcentaje) VALUES('CSS', '20');
+INSERT INTO skills (nombre, porcentaje) VALUES('JAVA', '32');
+INSERT INTO skills (nombre, porcentaje) VALUES('JAVASCRIPT', '14');
+INSERT INTO skills (nombre, porcentaje) VALUES('GITHUB', '2');
+INSERT INTO skills (nombre, porcentaje) VALUES('ANGULAR', '4');
+INSERT INTO skills (nombre, porcentaje) VALUES('SPRING BOOT', '45');
+INSERT INTO skills (nombre, porcentaje) VALUES('SCRUM', '54');
+INSERT INTO skills (nombre, porcentaje) VALUES('MYSQL', '23');
+
+INSERT INTO `usuarios` (username, password, enabled, nombre, apellido, email) VALUES ('matias','$2a$10$4rR39uPepa.aePTI4hdf8uT59q.BNASGh73U040y/WSL..m//WXFe',1, 'Matias', 'Bonfanti','matias@mbonfanti.com');
+INSERT INTO `usuarios` (username, password, enabled, nombre, apellido, email) VALUES ('admin','$2a$10$T2Zct/7EVCenNAF4BA6I5OVCtNLyimJD4ywoKnUDIvD5AIL8DDXJ2',1, 'Root', 'Admin','Admin@root.com');
+NSERT INTO `usuarios` (username, password, enabled, nombre, apellido, email) VALUES ('evaluador','$2a$10$l2KSY5CH7DtIu/2dsB18.eX7nxyu1e.6Zg96JyOfYZWu331Y1O10m',1, 'Root2', 'Admin2','Admin2@root.com');
+
+INSERT INTO `roles` (nombre) VALUES ('ROLE_USER');
+INSERT INTO `roles` (nombre) VALUES ('ROLE_ADMIN');
+
+INSERT INTO `usuarios_roles` (usuario_id, role_id) VALUES (1, 1);
+INSERT INTO `usuarios_roles` (usuario_id, role_id) VALUES (2, 2);
+INSERT INTO `usuarios_roles` (usuario_id, role_id) VALUES (2, 1);
+INSERT INTO `usuarios_roles` (usuario_id, role_id) VALUES (3, 2);
+INSERT INTO `usuarios_roles` (usuario_id, role_id) VALUES (3, 1);

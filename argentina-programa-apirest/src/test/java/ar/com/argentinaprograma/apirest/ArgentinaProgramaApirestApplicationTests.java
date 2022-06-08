@@ -1,0 +1,13 @@
+package ar.com.argentinaprograma.apirest;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class ArgentinaProgramaApirestApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

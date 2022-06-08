@@ -1,0 +1,5 @@
+package ar.com.argentinaprograma.apirest.models.entity;
+
+public class Educacion {
+
+}
